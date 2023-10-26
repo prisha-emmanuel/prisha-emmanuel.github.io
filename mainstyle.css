@@ -1,0 +1,588 @@
+body {
+   background-color: rgb(234,224,204);
+    font-family:'Times New Roman', Times, serif, monospace, sans-serif;
+    scroll-behavior: smooth;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+   
+  h1{
+    font-size: 20px;
+  }
+
+  a.button {
+    background-color: rgb(	160, 160, 131);
+    border:rgb(255, 255, 255); 
+    border-style:solid;
+    border-width: 1px;
+    padding: .3em; 
+    font-weight: 100;
+    margin-top: 12.25em;
+    font-size: 20px;
+    color:rgb(245, 245, 245);
+    transition:color, background-color .5s;
+    
+  }
+
+
+  td.headerdata {
+    margin: 10px;
+  }
+
+  .rowreverse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+
+  p.aboutMeDescription {
+    color:rgb(	77, 106, 109);
+    font-family:'Times New Roman', Helvetica, Arial, sans-serif;
+    font-weight:100;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height:140%;
+    font-size:1em;
+    text-align: center;
+	}
+  a.prev {
+    display: none;
+  }
+  a.next {
+    display: none;
+  }
+
+
+  span.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(208, 207, 207);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  table.infiniteFlight{
+    background-color: #A0A083;
+    color: rgba(255, 255, 255, .702);
+    /*color: rgba(198, 198, 198, 0.702);*/
+    font-size: 10px;
+    font-family:'Times New Roman',Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight:100;
+    letter-spacing: 1px;
+    margin: 0px;
+    margin-bottom: 10px;
+    border-radius: .5em;
+    /*border-radius: 1.25em;*/
+    display: flex;
+    justify-content: center;
+    height: "350";
+  }
+
+
+  table.realWorld{
+    background-color: rgb(35,37,41);
+    color: rgba(255, 255, 255, .702);
+    /*color: rgba(198, 198, 198, 0.702);*/
+    font-size: 10px;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight:100;
+    letter-spacing: 1px;
+    margin: 0px;
+    margin-bottom: 10px;
+    border-radius: .5em;
+    /*border-radius: 1.25em;*/
+    display: flex;
+    justify-content: center;
+    height: "350";
+  }
+  iframe.myIframe{
+    height: 100px;
+    margin-top:3%;
+    margin-bottom:3%;
+    
+  
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    color:rgb(	77, 106, 109);
+    text-align: center;
+    font-family:'Times New Roman', Helvetica, Arial, sans-serif;
+    font-weight:100;
+    letter-spacing: 4px;
+    margin-bottom:0em
+  }
+
+
+h3 {
+	color: rgb(	77, 106, 109);
+	display: flex;
+	justify-content: center;
+  font-family:'Times New Roman', Helvetica, Arial, sans-serif;
+  font-weight:100;
+  letter-spacing: 2px;
+}
+
+iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: 0.25em;
+
+  border-radius: 1.25em; 
+  border-width: 0em;
+
+}
+
+
+.header{
+	/* background-color: rgb(255, 233, 205); */
+
+	display: flex;
+	justify-content: center;
+	white-space: nowrap ;
+  border-spacing: 25px;
+
+}
+
+
+
+.infiniteFlight, .realWorld{
+	background-color: rgb(	160, 160, 131);
+	color: rgba(255, 255, 255, .702);
+  /*color: rgba(198, 198, 198, 0.702);*/
+
+  font-family:'Times New Roman', Helvetica, Arial, sans-serif;
+  font-weight:100;
+  letter-spacing: 1px;
+
+  margin: 3.25em; 
+  border-radius: .5em;
+	/*border-radius: 1.25em;*/
+	display: flex;
+	justify-content: center;
+
+}
+
+
+  
+a {
+  text-decoration:none;
+  color:rgba(198, 198, 198, 0.702);
+
+}
+
+.button {
+  background-color: rgb(	160, 160, 131);
+  border:rgb(255, 255, 255); 
+  border-style:solid;
+  border-width: .1em;;
+  padding: 0.5em; 
+  font-weight: 100;
+	margin-top: 12.25em;
+  font-size: 1.2em;
+  color:rgb(245, 245, 245);
+  transition:color, background-color .5s
+}
+
+.button:link, .button:visited {
+	color:rgb(255, 255, 255);
+	text-decoration:none;
+
+  font-family:'Times New Roman', Helvetica, Arial, sans-serif;
+  font-weight:100;
+  letter-spacing: 1.5px;
+
+}
+
+
+.button:hover, .button:active {
+  background-color: rgb(255, 255, 255);
+	color:gray;
+	text-decoration:none;
+}
+
+ 
+
+.productionDateRight {
+	text-align:right;
+	vertical-align: bottom;
+  padding: 1%;
+}
+.productionDateLeft {
+	text-align:left;
+	vertical-align: bottom;
+  padding: 1%;
+}
+
+.description {
+	vertical-align: top;
+	font-size:130%;
+  padding: 1%;
+}
+
+
+
+
+
+  
+/* BACK TO TOPPPP: */
+
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 30px; /* Place the button at the bottom of the page */
+	right: 40px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+
+	border: rgba(198, 198, 198, 0.702); /* Remove borders */
+  border-style: solid;
+  border-width: .1em;
+	outline: none; /* Remove outline */
+	background-color: rgba(160, 160, 131); /* Set a background color */
+	color: rgba(198, 198, 198, 0.702); /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 10px; /* Some padding */
+	/* border-radius: 10px; Rounded corners */
+	font-size: 20px; /* Increase font size */
+  font-family:'Times New Roman', Helvetica, Arial, sans-serif;
+  font-weight:100;
+  letter-spacing: 1px;
+  transition:color .5s
+  }
+  
+  #myBtn:hover {
+  border: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: .1em;
+	color: rgb(255, 255, 255); /* Add a dark-grey background on hover */
+  }
+
+  * {box-sizing:border-box}
+
+
+
+
+
+
+
+
+
+  /* SLIDESHOW */
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+
+  background-color: rgb(27,29,33);
+  cursor: pointer;
+  position: absolute;
+  border-style:none;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  margin-left: 0em;
+
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1px;
+  width: 30px;
+  margin: 9px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(198, 198, 198, 0.502);
+  
+}
+
+
+
+
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+  /* END OF SLIDESHOW */
+
+
+.bestwork {
+	background-color: rgb(35,37,41);
+	 margin: 0em; 
+}
+
+.BestWorksHeader {
+	color: rgb(77, 106, 109);
+	padding-top: 1.5em;
+  padding-bottom: 0em;
+
+
+
+
+}
+
+.aboutMeDescription {
+	color:rgb(	77, 106, 109);
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight:100;
+  letter-spacing: 1px;
+  margin-left: 5em;
+  margin-right: 5em;
+  line-height:140%;
+  font-size:1em;
+}
+
+.pictureDescription {
+	/*background-color: rgb(35,37,41);*/
+	color: rgba(255, 255, 255, .802);
+  /*color: rgba(198, 198, 198, 0.702);*/
+
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight:100;
+ 
+
+	display: flex;
+	justify-content: center;
+  text-align: center;
+
+
+  line-height:140%;
+  font-size:1em;
+  letter-spacing: .7px;
+  padding:.1em;
+
+}
+
+/* 
+
+
+
+
+IMAGES COMPARE SLIDER */
+
+.container {
+  position: relative;
+  width: 100%;
+ 
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+/* ENDD */
+
+
+.center{
+  margin-left: 33%; 
+} 
+
+
+
+
+/* custom scrollbar  */ 
+::-webkit-scrollbar {
+  width: .1px;
+  border-radius: 4px;
+
+  
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgb(35,37,41);
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 7px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 7px;
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Insta */
+.fa-instagram {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.myIframe{
+  height: 300px;
+  margin-top:3%;
+  margin-bottom:3%;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+.gallery {
+  border-spacing: 30px;
+  }
+
+
+
+.gallerydata{
+  padding: .5em;
+  background-color: rgb(45, 48, 52);
+	color: rgba(255, 255, 255, .702);
+	border-radius: .5em;
+}
+
+
+.gallerydescription {
+  text-align: center;
+	color: rgba(255, 255, 255, .702);
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight:100;
+  letter-spacing: 1px;
+}
+
+
